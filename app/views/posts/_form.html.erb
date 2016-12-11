@@ -1,0 +1,15 @@
+<%= form_tag 'http://upload.qiniu.com', multipart: true do %>
+ <%= hidden_field_tag :token, @qiniu_upload_token %>
+ 
+ <div class="field">
+ <%= label_tag :title %><br>
+ <%= text_field_tag 'x:title' %>
+ </div>
+ <div class="field">
+ <%= label_tag :image %><br>
+ <%= file_field_tag :file %>
+ </div>
+ <div class="actions">
+ <%= submit_tag 'Create' %>
+ </div>
+<% end %>

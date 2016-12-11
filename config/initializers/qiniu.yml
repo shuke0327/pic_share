@@ -1,0 +1,9 @@
+development:
+  qiniu_store_url: http://oi0kyjmmk.bkt.clouddn.com
+test:
+  qiniu_store_url: http://oi0kyjmmk.bkt.clouddn.com
+
+# Do not keep production secrets in the repository,
+# instead read values from the environment.
+production:
+  qiniu_store_url: http://oi0kyjmmk.bkt.clouddn.com
